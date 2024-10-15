@@ -1,0 +1,171 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 49px;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 20px;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.AboutMe, .Personal {
+  overflow: hidden;
+  flex: 1;
+  margin: 10px;
+  font-size: 25px;
+  background-color: var(--color-navlightbg);
+  width: 100%;
+  gap: 10%;
+  padding: 50px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.AboutMedark, .Personaldark {
+  overflow: hidden;
+  flex: 1;
+  margin: 10px;
+  font-size: 25px;
+  background-color: var(--color-navbg);
+  width: 100%;
+  gap: 10%;
+  padding: 50px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.Personaldark li{
+  list-style: none;
+  margin-bottom: 15px;
+}
+.Personal li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  font-size: 25px;
+  background-color: var(--color-navlightbg);
+  width: 100%;
+  padding: 50px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+}
+.socialmedia{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 60px;
+}
+.socialmediadark{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 60px;
+
+}
+.socialmediadark a{
+  color: var(--color-text);
+ 
+}
+.skilldark {
+  flex: 1;
+  margin: 10px;
+  font-size: 25px;
+  background-color: var(--color-navbg);
+  width: 100%;
+  padding: 50px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skillsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.skillsContainer ul {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  background-color: var(--color-navlightbg);
+  border-radius: 16px;
+}
+
+.skillsContainer ul li {
+  list-style: none;
+}
+
+.skillsContainer ul h3 {
+  margin-top: 0;
+}
+
+.maindark {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  z-index: 1;
+  color: var(--color-text);
+  background-color: var(--color-darkbg);
+  gap: 91px;
+}
+
+.skillsContainerdark {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .skillsContainerdark ul {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--color-navbg);
+    border-radius: 16px;
+  }
+  
+  .skillsContainerdark ul li {
+    list-style: none;
+  }
+  
+  .skillsContainerdark ul h3 {
+    margin-top: 0;
+  }
+.mainlight {
+  background-color: var(--color-lightbg);
+  color: var(--color-darktext);
+}
+
+@media screen and (max-width: 830px) {
+  .skillsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skillsContainerdark{
+    flex-direction: column;
+    align-items: center;
+  }
+  .topSection {
+    flex-direction: column;
+    align-items: center;
+  }
+}

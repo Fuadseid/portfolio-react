@@ -1,0 +1,51 @@
+[
+  {
+    "title": "GPA Calculator",
+    "imageSrc": "data/OIP.jpg",
+    "description": "This Flutter App used to calculate GPA based on our university grading system ",
+    "skills": ["Flutter"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/Fuadseid/GPA-calculator-project"
+  },
+  {
+    "title": "Pizza-app",
+    "imageSrc": "data/pizaa.jpg",
+    "description": "This is Pizaa app done by React",
+    "skills": ["React"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/Fuadseid/Pizza_app-with-react"
+  },
+  {
+    "title": "Social media",
+    "imageSrc": "data/socialmedia.jpg",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["Flutter", "Firebase"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/Abdunesr/social_network_demo_app"
+  },
+  {
+    "title": "Check-list ",
+    "imageSrc": "data/checklist.jpg",
+    "description": "This is a Figma design app for tablet medicine users to remember if they take their medication properly as scheduled",
+    "skills": ["Figma"],
+    "demo": "https://figma.com/proto/gTgUkMBH8uuQ9N1kCAwjGT/Project-for-tab-user?node-id=1-4&starting-point-node-id=1%3A4",
+    "source": "https://figma.com/design/gTgUkMBH8uuQ9N1kCAwjGT/Project-for-tab-user?node-id=1-2&node-type=canvas&t=vyxMQOspuGMte8xJ-0"
+  },
+
+  {
+    "title": "Portfolio",
+    "imageSrc": "data/round photo.jpg",
+    "description": "This is a first portfolio project ",
+    "skills": ["html", "css", "JS"],
+    "demo": "https://fuaddsportfoliofamilyplus.netlify.app",
+    "source": "https://github.com/Fuadseid/portfolios"
+  },
+  {
+    "title": "Pricing Product",
+    "imageSrc": "data/price.jpg",
+    "description": "This is a project that is done by node JS",
+    "skills": ["Node", "Express"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/Fuadseid/Pricing-Proj-with-node"
+  }
+]

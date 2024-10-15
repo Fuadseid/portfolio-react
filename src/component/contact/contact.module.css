@@ -1,0 +1,130 @@
+.mainlight {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-textlight);
+  z-index: 1;
+
+  background-color: var(--color-lightbg);
+  gap: 91px;
+  box-sizing: border-box;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.maindark {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-lightbg);
+    z-index: 1;
+  
+    background-color: var(--color-darkbg);
+    gap: 91px;
+    box-sizing: border-box;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container {
+  background-color: var(--color-navlightbg);
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  border-radius: 20px;
+
+  
+}
+.darkcontainer{
+    background-color: var(--color-navbg);
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  border-radius: 20px;
+  
+}
+
+.sec{
+    width: 50%;
+    height: 70%;
+}
+form {
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 90px;
+  justify-content: center;
+  gap: 15px;
+  
+}
+form input, .button {
+    border-radius: 15px;
+    height: 30%;
+    padding: 10px;
+}
+form textarea{
+    height: 60px;
+    border-radius: 11px;
+    padding: 10px;
+    font-size: 15px;
+}
+form input[type="submit"]{
+    width:50% ;
+    margin-left: 25%;
+    padding: 10px;
+    font-size: 15px;
+}
+form label{
+    font-size: 16px;
+    font-weight: bold;
+}
+form input[type="submit"]:hover{
+    background-color: rgb(9, 52, 52);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+}
+form .button:hover{
+    background-color: rgb(9, 52, 52);
+    color: white;
+    cursor: pointer;
+}
+.socialmedia{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    width: 50%;
+    margin-left: 25%;
+  }
+  .button{
+    width:50% ;
+    margin-left: 25%;
+    padding: 10px;
+    font-size: 15px;
+  }
+  .socialmediadark{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    width: 50%;
+    margin-left: 25%;
+  }
+  .socialmediadark a{
+    
+    color: var(--color-text);
+   
+  }
+ .socialmediadark a{
+    color: var(--color-text);
+   
+  }

@@ -1,0 +1,43 @@
+.light {
+    background-color: var(--color-lightbg);
+    width: 100%;
+  }
+  
+  .maindark {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-lightbg);
+    z-index: 1;
+
+    background-color: var(--color-darkbg);
+    gap: 91px;
+    box-sizing: border-box;
+}
+  .container, .containerdark {
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    width: 100%; /* Adjust width to fit better */
+    max-width: 1200px; /* Optional: set a maximum width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+
+  .title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%; /* Ensure it uses full width */
+  }
+  
+  
