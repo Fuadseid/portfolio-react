@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { FaSquareUpwork } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 
 
 const Contact = ({ isLight }) => {
@@ -44,8 +44,13 @@ const Contact = ({ isLight }) => {
   return (
     <div className={isLight ? styles.mainlight : styles.maindark}>
       <section className={styles.sec}>
-        <div className={isLight ? styles.container : styles.darkcontainer}>
-          <form ref={form} onSubmit={sendEmail}>
+        <div  className={isLight ? styles.container : styles.darkcontainer}>
+          <motion.form
+    initial={{y:"100%"}}
+    animate={{y:0}}
+    exit={{y:"-100%"}}
+    transition={{duration:0.7,delay:0}}
+    className={isLight ? styles.formco : styles.formcodark} ref={form} onSubmit={sendEmail}>
             <label>Name</label>
             <input type="text" name="user_name" required />
             <label>Email</label>
@@ -77,7 +82,7 @@ const Contact = ({ isLight }) => {
                 </a>
           </div>
 
-          </form>
+          </motion.form>
  
 
         </div>

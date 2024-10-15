@@ -33,7 +33,7 @@
     width: 100%;
 }
 .container {
-  background-color: var(--color-navlightbg);
+
   display: flex;
   height: 100%;
   width: 100%;
@@ -43,7 +43,7 @@
   
 }
 .darkcontainer{
-    background-color: var(--color-navbg);
+  
   display: flex;
   height: 100%;
   width: 100%;
@@ -57,6 +57,8 @@
     height: 70%;
 }
 form {
+    background-color: var(--color-navlightbg);
+    border-radius: 15px;
     width: 100%;
   display: flex;
   flex-direction: column;
@@ -64,6 +66,16 @@ form {
   justify-content: center;
   gap: 15px;
   
+}
+.formcodark{
+    background-color: var(--color-navbg);
+    border-radius: 15px;
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 90px;
+  justify-content: center;
+  gap: 15px; 
 }
 form input, .button {
     border-radius: 15px;
@@ -77,8 +89,8 @@ form textarea{
     font-size: 15px;
 }
 form input[type="submit"]{
-    width:50% ;
-    margin-left: 25%;
+   
+    margin-left: 20%;
     padding: 10px;
     font-size: 15px;
 }
@@ -91,6 +103,7 @@ form input[type="submit"]:hover{
     color: white;
     cursor: pointer;
     padding: 15px;
+
 }
 form .button:hover{
     background-color: rgb(9, 52, 52);

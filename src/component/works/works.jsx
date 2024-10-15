@@ -13,7 +13,7 @@ const Works = ({ isLight }) => {
     initial={{y:"100%"}}
     animate={{y:0}}
     exit={{y:"-100%"}}
-    transition={{ duration: 0.7, delay: 0 }}
+    transition={{duration:0.7,delay:0}}
     className={styles.projects}>
           {projects.map((project, id) => (
             <ProjectCard isLight={isLight} project={project} key={id} />
