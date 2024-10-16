@@ -141,3 +141,79 @@ form .button:hover{
     color: var(--color-text);
    
   }
+  @media (max-width: 768px) {
+  .mainlight, .maindark {
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements */
+    gap: 20px; /* Reduce gap between elements */
+  }
+
+  .container, .darkcontainer {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow height to adjust */
+  }
+
+  .sec {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Allow height to adjust */
+  }
+
+  form {
+    padding: 20px; /* Reduce padding */
+  }
+
+  form input, .button {
+    height: auto; /* Adjust height */
+    width: 100%; /* Full width */
+  }
+
+  .socialmedia, .socialmediadark {
+    flex-direction: column; /* Stack social media icons vertically */
+    align-items: center; /* Center align */
+    font-size: 30px; /* Reduce font size */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .button {
+    width: 100%; /* Full width */
+    margin-left: 0; /* Remove left margin */
+  }
+}
+@media (max-width: 768px) {
+  .mainlight, .maindark {
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements */
+    gap: 20px; /* Reduce gap between elements */
+  }
+
+  .container, .darkcontainer {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow height to adjust */
+  }
+
+  .sec {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Allow height to adjust */
+  }
+
+  form {
+    padding: 20px; /* Reduce padding */
+  }
+
+  form input, .button {
+    height: auto; /* Adjust height */
+    width: 100%; /* Full width */
+  }
+
+  .socialmedia, .socialmediadark {
+    flex-direction: column; /* Stack social media icons vertically */
+    align-items: center; /* Center align */
+    font-size: 30px; /* Reduce font size */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .button {
+    width: 100%; /* Full width */
+    margin-left: 0; /* Remove left margin */
+  }
+}
