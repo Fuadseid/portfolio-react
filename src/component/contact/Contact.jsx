@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import styles from "./contact.module.css";
 import emailjs from "@emailjs/browser";
 import { FaGithub } from "react-icons/fa";
-import { CiLinkedin } from "react-icons/ci";
 import { FaSquareUpwork } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -75,9 +74,7 @@ const Contact = ({ isLight }) => {
               <a href="https://github.com/Fuadseid">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com/in/fuad-seid-8b61322a9">
-                <CiLinkedin />
-              </a>
+
               <a href="https://upwork.com/freelancers/~01da3f6dc0c1cdd8d4">
                 <FaSquareUpwork />
               </a>

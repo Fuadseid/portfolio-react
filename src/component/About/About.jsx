@@ -79,9 +79,7 @@ const About = ({ isLight }) => {
                 <a href="https://github.com/Fuadseid">
                   <FaGithub />
                 </a>
-                <a href="https://linkedin.com/in/fuad-seid-8b61322a9">
-                  <CiLinkedin />
-                </a>
+
                 <a href="https://upwork.com/freelancers/~01da3f6dc0c1cdd8d4">
                   <FaSquareUpwork />
                 </a>

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Hero.module.css";
 import ppImage from "../../public/pp.jpg";
 import Resume from "../../Resume/CV.pdf";
-import { color, motion } from "framer-motion";
+import {motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 const Hero = ({ isLight }) => {
   const [text] = useTypewriter({
