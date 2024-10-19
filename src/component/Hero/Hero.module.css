@@ -26,8 +26,8 @@
     justify-content: space-between;
     padding: 25px;
     z-index: 1;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 0%;
+    margin-right: 0%;
     gap: 91px;   
     background-color: var(--color-darkbg);
 }
@@ -168,6 +168,8 @@
         box-sizing: border-box; 
         margin: 0;
         background-color: var(--color-darkbg);
+        margin-left: 0%;
+        margin-right: 0%;
     }
     .image {
         width: 50%;

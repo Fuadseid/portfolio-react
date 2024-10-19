@@ -119,7 +119,7 @@
   display: flex !important;
   animation: fadeOut 0.3s ease forwards;
 }
-@media screen and (max-width: 926px) and (min-width: 830px) { 
+@media screen and (max-width: 1353.6px) and (min-width: 830px) { 
   .menuItemsdark{
     gap: 100px;
     display: flex;
