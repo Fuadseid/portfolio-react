@@ -57,7 +57,7 @@ const Contact = ({ isLight }) => {
             <label>Email</label>
             <input type="email" name="user_email" required />
             <label>Message</label>
-            <textarea name="message" required />
+            <textarea name="message" placeholder="...Comments" required />
             <input
               type="submit"
               value={isSuccess ? "Success" : "Send"}
