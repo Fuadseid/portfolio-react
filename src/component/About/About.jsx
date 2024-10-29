@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./About.module.css";
 import { motion } from "framer-motion";
 import { IoLogoJavascript } from "react-icons/io5";
 import { IoLogoPython } from "react-icons/io";
@@ -16,17 +15,16 @@ import { SiPostgresql } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
-import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { FaSquareUpwork } from "react-icons/fa6";
 const About = ({ isLight }) => {
   return (
-    <div className={isLight ? styles.mainlight : styles.maindark}>
-      <section className={styles.container}>
-        <div className={styles.topSection}>
-          <div className={isLight ? styles.AboutMe : styles.AboutMedark}>
+    <section className="h-fit w-fit md:text-xl p-4">
+      <div>
+        <div className="flex flex-col md:flex-row gap-8 mb-4">
+          <div className="   border p-6 hover:transition-all duration-700 ease-in-out bg-[#D9D9D9] hover:shadow-2xl hover:shadow-cyan-600 from-cyan-700 via-sky-600 to-cyan-200  border-cyan-600 overflow-hidden  rounded-md dark:bg-[#232A30] md:w-1/2">
             <motion.h1
-              className="h1tag"
+              className="ml-6"
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               exit={{ y: "-100%" }}
@@ -35,7 +33,7 @@ const About = ({ isLight }) => {
               About me
             </motion.h1>
             <motion.p
-              className="h1tag"
+              className="p-6  "
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               exit={{ y: "-100%" }}
@@ -49,9 +47,8 @@ const About = ({ isLight }) => {
               problems through coding.
             </motion.p>
           </div>
-          <div className={isLight ? styles.Personal : styles.Personaldark}>
+          <div className="md:w-1/2 border p-6 hover:transition-all duration-700 ease-in-out bg-[#D9D9D9]  hover:shadow-2xl hover:shadow-cyan-600 from-cyan-700 via-sky-600 to-cyan-200  border-cyan-600 overflow-hidden  rounded-md dark:bg-[#232A30] ">
             <motion.h1
-              className="h1tag"
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               exit={{ y: "-100%" }}
@@ -59,8 +56,8 @@ const About = ({ isLight }) => {
             >
               Personal Detail
             </motion.h1>
+            <br />
             <motion.ul
-              className="h1tag"
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               exit={{ y: "-100%" }}
@@ -71,11 +68,8 @@ const About = ({ isLight }) => {
               <li>Residence: Ethiopia</li>
               <li>City: Addis Ababa</li>
               <li>Freelance: Hire me on Upwork</li>
-              <div
-                className={
-                  isLight ? styles.socialmedia : styles.socialmediadark
-                }
-              >
+              <br />
+              <div className="flex  gap-10">
                 <a href="https://github.com/Fuadseid">
                   <FaGithub />
                 </a>
@@ -90,9 +84,9 @@ const About = ({ isLight }) => {
             </motion.ul>
           </div>
         </div>
-        <div className={isLight ? styles.skill : styles.skilldark}>
+        <div className="border hover:transition-all duration-700 ease-in-out  hover:shadow-2xl hover:shadow-cyan-600 bg-[#D9D9D9] from-cyan-700 via-sky-600 to-cyan-200  border-cyan-600 overflow-hidden text-2xl rounded-md dark:bg-[#232A30] ">
           <motion.h1
-            className="h1tag"
+            className="text-center"
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             exit={{ y: "-100%" }}
@@ -100,92 +94,112 @@ const About = ({ isLight }) => {
           >
             Skills
           </motion.h1>
-
-          <div
-            className={
-              isLight ? styles.skillsContainer : styles.skillsContainerdark
-            }
-          >
+          <div className="flex flex-col md:flex-row justify-between p-6">
             <motion.ul
-              className="h1tag"
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               exit={{ y: "-100%" }}
               transition={{ duration: 0.7, delay: 0 }}
             >
-              <h3>Languages</h3>
-              <li>
-                <IoLogoJavascript /> JavaScript
-              </li>
-              <li>
-                <IoLogoPython /> Python (exploring)
-              </li>
-              <li>
-                <img src={isLight ? cplus : cplusdark} alt="" width={"25px"} />{" "}
-                C++
-              </li>
-              <li>
-                <FaJava /> Java
-              </li>
-              <li>
-                <SiDart /> Dart
-              </li>
-              <h3>Frameworks and Libraries</h3>
-              <li>
-                <FaReact /> React
-              </li>
-              <li>
-                <FaNodeJs /> Node.js
-              </li>
-              <li>
-                <TbBrandReactNative /> React Native (exploring)
-              </li>
-              <li>
-                <SiFlutter /> Flutter
-              </li>
-              <h3>Databases</h3>
-              <li>
-                <PiFileSql /> SQL
-              </li>
-              <li>
-                <SiPostgresql /> MongoDB
-              </li>
+              <h3 className="text-lg  md:text-2xl">Languages</h3>
+              <br />
+              <div className="md:flex text-lg text gap-4">
+                <li>
+                  <IoLogoJavascript /> JavaScript
+                </li>
+                <li>
+                  <IoLogoPython /> Python (exploring)
+                </li>
+                <li>
+                  <img
+                    src={isLight ? cplus : cplusdark}
+                    alt=""
+                    width={"25px"}
+                  />{" "}
+                  C++
+                </li>
+                <li>
+                  <FaJava /> Java
+                </li>
+                <li>
+                  <SiDart /> Dart
+                </li>
+              </div>
+
+              <h3 className=" mt-2 md:text-2xl">Frameworks and Libraries</h3>
+              <div className="text-lg md:flex mt-4 text gap-4">
+                <li>
+                  <FaReact /> React
+                </li>
+                <li>
+                  <FaNodeJs /> Node.js
+                </li>
+                <li>
+                  <TbBrandReactNative /> React Native (exploring)
+                </li>
+                <li>
+                  <SiFlutter /> Flutter
+                </li>
+              </div>
+
+              <h3 className="text-xl mt-4 md:text-2xl">Databases</h3>
+              <div className="text-lg md:flex mt-4 text gap-4">
+                <li>
+                  <PiFileSql /> SQL
+                </li>
+                <li>
+                  <SiPostgresql /> MongoDB
+                </li>
+              </div>
             </motion.ul>
 
             <motion.ul
-              className="h1tag"
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               exit={{ y: "-100%" }}
               transition={{ duration: 0.7, delay: 0 }}
             >
-              <h3>Version Control</h3>
-              <li>
-                <FaGitAlt /> Git
-              </li>
-              <li>
-                <FaGithub /> GitHub
-              </li>
-              <h3>Project Management</h3>
-              <li>📊 Software Project Management</li>
-              <h3>Collaboration</h3>
-              <li>🤝 Team Collaboration</li>
-              <h3>UI/UX</h3>
-              <li>
-                <FaFigma /> Figma
-              </li>
-              <h3>Area of Exploration</h3>
-              <li>
-                <IoLogoPython /> Python
-              </li>
-              <li>
-                <TbBrandReactNative /> React Native
-              </li>
+              <h3 className="text-xl md:text-2xl">Version Control</h3>
+              <div className="text-lg md:flex mt-4 text gap-12">
+                <li>
+                  <FaGitAlt /> Git
+                </li>
+                <li>
+                  <FaGithub /> GitHub
+                </li>
+              </div>
+
+              <h3 className="text-xl mt-4 md:text-2xl">Project Management</h3>
+              <br />
+              <div className="text-lg md:flex text gap-12">
+                <li>📊 Software Project Management</li>
+
+                <li>🤝 Team Collaboration</li>
+                <br />
+              </div>
+
+              <h3 className="text-xl mt-4 md:text-2xl">UI/UX</h3>
+              <br />
+              <div className="text-lg md:flex  text gap-12">
+                <li>
+                  <FaFigma /> Figma
+                </li>
+              </div>
+
+              <h3 className="mt-4">Area of Exploration</h3>
+              <div className="text-lg md:flex  text gap-12">
+                <li>
+                  <IoLogoPython /> Python
+                </li>
+                <li>
+                  <TbBrandReactNative /> React Native
+                </li>
+              </div>
             </motion.ul>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
